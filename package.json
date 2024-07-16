@@ -2,8 +2,9 @@
   "name": "IFDEF-Pathfinder",
   "displayName": "IFDEF Pathfinder",
   "description": "Show nested conditonal path, highlights and folds #ifdef sections in C/C++ code",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "Ariel Jacob",
+  "icon": "Marketing/icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -67,5 +68,9 @@
     "@types/vscode": "^1.60.0",
     "typescript": "^4.4.3",
     "vscode-test": "^1.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanffn/IFDEF-Pathfinder.git"
   }
 }

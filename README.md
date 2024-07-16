@@ -10,9 +10,11 @@ Say goodbye to the dark ages of manual #ifdef tracking. With IFDEF Pathfinder, y
 In a universe where coding can feel like navigating an asteroid field, IFDEF Pathfinder is your reliable star map, your trusty tricorder, your beacon in the vast expanse of preprocessor directives. Ready to join the ranks of elite code explorers? 
 With IFDEF Pathfinder, you'll boldly go where no coder has gone before!
 
-![Colorize & Dynamic ifdef path](./Marketing/Path.png)
+### Colorize & Dynamic ifdef path
+![Colorize & Dynamic ifdef path](https://raw.githubusercontent.com/tanffn/IFDEF-Pathfinder/main/Marketing/Path.png)
 
-![ifdef folding](./Marketing/Folding.png)
+### ifdef folding
+![ifdef folding](https://raw.githubusercontent.com/tanffn/IFDEF-Pathfinder/main/Marketing/Folding.png)
 
 ## Features
 
