@@ -1,0 +1,71 @@
+{
+  "name": "IFDEF-Pathfinder",
+  "displayName": "IFDEF Pathfinder",
+  "description": "Show nested conditonal path, highlights and folds #ifdef sections in C/C++ code",
+  "version": "0.0.1",
+  "publisher": "Ariel Jacob",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cpp"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Ifdef Highlighter",
+      "properties": {
+          "ifdefHighlighter.showDecorations": {
+              "type": "boolean",
+              "default": true,
+              "description": "Toggle decorations for #ifdef sections."
+          },
+          "ifdefHighlighter.showFullPath": {
+              "type": "boolean",
+              "default": false,
+              "description": "Show full path in decorations."
+          }
+      }
+    },
+    "commands": [
+      {
+          "command": "extension.collapseAllIfdefs",
+          "title": "IFDEFs - Collapse All in Page"
+      },
+      {
+          "command": "extension.collapseIfdefsInSection",
+          "title": "IFDEFs - Collapse All Under This Section"
+      },
+      {
+          "command": "extension.expandAll",
+          "title": "IFDEFs - Expand All"
+      }
+    ],
+    "languages": [
+      {
+        "id": "cpp",
+        "aliases": ["C++", "cpp"],
+        "extensions": [".cpp", ".cxx", ".hpp", ".hxx"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cpp",
+        "scopeName": "source.preprocessor",
+        "path": "./syntaxes/preprocessor.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.4.3",
+    "vscode-test": "^1.6.2"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "scopeName": "source.preprocessor",
+  "patterns": [
+    {
+      "begin": "#ifdef\\b",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.preprocessor.ifdef.level1"
+        }
+      },
+      "end": "#endif\\b",
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control.preprocessor.endif.level1"
+        }
+      },
+      "patterns": [
+        {
+          "begin": "#ifdef\\b",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.control.preprocessor.ifdef.level2"
+            }
+          },
+          "end": "#endif\\b",
+          "endCaptures": {
+            "0": {
+              "name": "keyword.control.preprocessor.endif.level2"
+            }
+          },
+          "patterns": [
+            {
+              "begin": "#ifdef\\b",
+              "beginCaptures": {
+                "0": {
+                  "name": "keyword.control.preprocessor.ifdef.level3"
+                }
+              },
+              "end": "#endif\\b",
+              "endCaptures": {
+                "0": {
+                  "name": "keyword.control.preprocessor.endif.level3"
+                }
+              },
+              "patterns": [
+                {
+                  "begin": "#ifdef\\b",
+                  "beginCaptures": {
+                    "0": {
+                      "name": "keyword.control.preprocessor.ifdef.level4"
+                    }
+                  },
+                  "end": "#endif\\b",
+                  "endCaptures": {
+                    "0": {
+                      "name": "keyword.control.preprocessor.endif.level4"
+                    }
+                  },
+                  "patterns": [
+                    {
+                      "begin": "#ifdef\\b",
+                      "beginCaptures": {
+                        "0": {
+                          "name": "keyword.control.preprocessor.ifdef.level5"
+                        }
+                      },
+                      "end": "#endif\\b",
+                      "endCaptures": {
+                        "0": {
+                          "name": "keyword.control.preprocessor.endif.level5"
+                        }
+                      },
+                      "patterns": [
+                        {
+                          "begin": "#ifdef\\b",
+                          "beginCaptures": {
+                            "0": {
+                              "name": "keyword.control.preprocessor.ifdef.level6"
+                            }
+                          },
+                          "end": "#endif\\b",
+                          "endCaptures": {
+                            "0": {
+                              "name": "keyword.control.preprocessor.endif.level6"
+                            }
+                          },
+                          "patterns": [
+                            {
+                              "begin": "#ifdef\\b",
+                              "beginCaptures": {
+                                "0": {
+                                  "name": "keyword.control.preprocessor.ifdef.level7"
+                                }
+                              },
+                              "end": "#endif\\b",
+                              "endCaptures": {
+                                "0": {
+                                  "name": "keyword.control.preprocessor.endif.level7"
+                                }
+                              },
+                              "patterns": [
+                                {
+                                  "begin": "#ifdef\\b",
+                                  "beginCaptures": {
+                                    "0": {
+                                      "name": "keyword.control.preprocessor.ifdef.level8"
+                                    }
+                                  },
+                                  "end": "#endif\\b",
+                                  "endCaptures": {
+                                    "0": {
+                                      "name": "keyword.control.preprocessor.endif.level8"
+                                    }
+                                  },
+                                  "patterns": [
+                                    {
+                                      "begin": "#ifdef\\b",
+                                      "beginCaptures": {
+                                        "0": {
+                                          "name": "keyword.control.preprocessor.ifdef.level9"
+                                        }
+                                      },
+                                      "end": "#endif\\b",
+                                      "endCaptures": {
+                                        "0": {
+                                          "name": "keyword.control.preprocessor.endif.level9"
+                                        }
+                                      },
+                                      "patterns": [
+                                        {
+                                          "begin": "#ifdef\\b",
+                                          "beginCaptures": {
+                                            "0": {
+                                              "name": "keyword.control.preprocessor.ifdef.level10"
+                                            }
+                                          },
+                                          "end": "#endif\\b",
+                                          "endCaptures": {
+                                            "0": {
+                                              "name": "keyword.control.preprocessor.endif.level10"
+                                            }
+                                          },
+                                          "patterns": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
