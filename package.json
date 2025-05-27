@@ -1,8 +1,8 @@
 {
   "name": "IFDEF-Pathfinder",
   "displayName": "IFDEF Pathfinder",
-  "description": "Show nested conditonal path, highlights and folds #ifdef sections in C/C++ code",
-  "version": "1.0.0",
+  "description": "Show nested conditonal path, highlights and folds #ifdef sections in source code",
+  "version": "1.0.1",
   "publisher": "Ariel Jacob",
   "icon": "Marketing/icon.png",
   "engines": {
@@ -10,7 +10,10 @@
   },
   "activationEvents": [
     "onLanguage:c",
-    "onLanguage:cpp"
+    "onLanguage:cpp",
+    "onLanguage:glsl",
+    "onLanguage:hlsl",
+    "onLanguage:metal"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -49,6 +52,24 @@
         "aliases": ["C++", "cpp"],
         "extensions": [".cpp", ".cxx", ".hpp", ".hxx"],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "glsl",
+        "aliases": ["GLSL", "OpenGL Shading Language"],
+        "extensions": [".glsl", ".frag", ".vert", ".geom", ".comp"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "hlsl",
+        "aliases": ["HLSL", "High Level Shading Language"],
+        "extensions": [".hlsl", ".fx", ".hlsli"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "metal",
+        "aliases": ["Metal Shading Language"],
+        "extensions": [".metal"],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -56,6 +77,21 @@
         "language": "cpp",
         "scopeName": "source.preprocessor",
         "path": "./syntaxes/preprocessor.json"
+      },
+      {
+        "language": "glsl",
+        "scopeName": "source.glsl",
+        "path": "./syntaxes/glsl.json"
+      },
+      {
+        "language": "hlsl",
+        "scopeName": "source.hlsl",
+        "path": "./syntaxes/hlsl.json"
+      },
+      {
+        "language": "metal",
+        "scopeName": "source.metal",
+        "path": "./syntaxes/metal.json"
       }
     ]
   },
@@ -67,7 +103,7 @@
   "devDependencies": {
     "@types/vscode": "^1.60.0",
     "typescript": "^4.4.3",
-    "vscode-test": "^1.6.2"
+    "@vscode/test-electron": "^2.5.2"
   },
   "repository": {
     "type": "git",
